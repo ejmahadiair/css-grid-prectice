@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid AutoFill And AutoFit</title>
+    <style>
+        .conteiner{
+            width: 400px;
+            background: #eee;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            
+            grid-auto-rows: 100px;
+        }
+        .item1{
+            background-color: green;
+            order: 1;
+        }
+        .item2{
+            background-color: greenyellow;
+            order: 2;
+        }
+        .item3{
+            background-color: hotpink;
+            order: 3;
+        }
+        .item4{
+            background-color: khaki;
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item item1">One</div>
+        <div class="item item2">Two</div>
+        <div class="item item3">Three</div>
+        <div class="item item4">Four</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Over Lapping</title>
+    <style>
+        .conteiner{
+            width: 400px;
+            border: 1px solid gray;
+            background: #eee;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 100px);
+        }
+        .item{
+            width: 200px;
+        }
+        .item1{
+            background-color: green;
+            grid-row: 1/3;
+            grid-column: 1/3;
+            align-self: start;
+        }
+        .item2{
+            background-color: greenyellow;
+            grid-row: 1/3;
+            grid-column: 1/3;
+            align-self: center;
+            justify-self: center;
+        }
+        .item3{
+            background-color: hotpink;
+            grid-row: 1/3;
+            grid-column: 1/3;
+            align-self: end;
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item item1">One Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus praesentium dolore, totam, libero atque molestiae qui quo, cupiditate ea ipsam eligendi a laboriosam delectus illo?</div>
+        <div class="item item2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe exercitationem provident quidem dolorum minus quas ipsum sit nesciunt cupiditate ullam! Explicabo aliquid enim impedit incidunt?</div>
+        <div class="item item3">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est libero rem harum sequi neque et illo, nostrum, tenetur ipsa doloremque in, accusamus veritatis nihil?</div>
+    </div>
+</body>
+</html>

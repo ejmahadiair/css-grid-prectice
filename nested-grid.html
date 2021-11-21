@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        .conteiner{
+            width: 400px;
+            background-color: khaki;
+            border: 1px solid gray;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,100px);
+        }
+        .item1{
+            background: hotpink;
+        }
+        .item2{
+            background: lawngreen;
+        }
+        .item3{
+            background: mediumseagreen;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 8px;
+            padding: 5px;
+        }
+        .iteam{
+            background: whitesmoke;
+            
+        }
+        .item4{
+            background: peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item item1">One</div>
+        <div class="item item2">Two</div>
+        <div class="item item3">
+            <div class="iteam">None</div>
+            <div class="iteam">NTwo</div>
+            <div class="iteam">Nthree</div>
+            <div class="iteam">Nfour</div>
+        </div>
+        <div class="item item4">Four</div>
+    </div>
+</body>
+</html>
